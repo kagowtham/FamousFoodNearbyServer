@@ -19,6 +19,12 @@
   	<description></description>
   	<servlet-class>com.codebuildrs.famousfoodnearby.Token</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteToken</servlet-name>
+  	<display-name>DeleteToken</display-name>
+  	<description></description>
+  	<servlet-class>com.codebuildrs.famousfoodnearby.DeleteToken</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Send</servlet-name>
   	<url-pattern>/Send</url-pattern>
@@ -26,5 +32,9 @@
   <servlet-mapping>
   	<servlet-name>Token</servlet-name>
   	<url-pattern>/Token</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteToken</servlet-name>
+  	<url-pattern>/DeleteToken</url-pattern>
   </servlet-mapping>
 </web-app>
