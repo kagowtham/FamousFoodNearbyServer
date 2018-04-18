@@ -4,9 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <listener>
-  	<listener-class>com.codebuildrs.famousfoodnearby.MyServletContextListener</listener-class>
-  </listener>
+  
   <servlet>
   	<servlet-name>Send</servlet-name>
   	<display-name>Send</display-name>
