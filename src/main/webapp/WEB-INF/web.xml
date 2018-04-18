@@ -37,6 +37,12 @@
   	<description></description>
   	<servlet-class>com.codebuildrs.famousfoodnearby.Get</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Start</servlet-name>
+  	<display-name>Start</display-name>
+  	<description></description>
+  	<servlet-class>com.codebuildrs.famousfoodnearby.Start</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Send</servlet-name>
   	<url-pattern>/Send</url-pattern>
@@ -56,5 +62,9 @@
   <servlet-mapping>
   	<servlet-name>Get</servlet-name>
   	<url-pattern>/Get</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Start</servlet-name>
+  	<url-pattern>/Start</url-pattern>
   </servlet-mapping>
 </web-app>
