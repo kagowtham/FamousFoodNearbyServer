@@ -9,7 +9,7 @@ public class Database {
    static MongoDatabase database;
    Database(){
 	   MongoClientURI uri = new MongoClientURI(
-				"mongodb://mydb:mydb@mongodb/mydb");
+				"mongodb+srv://mydb:mydb@cluster0-hmcgs.mongodb.net/test");
 	   mongo=new MongoClient(uri);
 	   database=mongo.getDatabase("mydb");
    }

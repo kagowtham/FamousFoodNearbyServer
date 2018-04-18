@@ -61,6 +61,7 @@ public void init() throws ServletException {
 			    .build();
 		String res="";
 		try {
+			 if(to.trim().length()>0)
 			res = FirebaseMessaging.getInstance().sendAsync(message).get();
 			System.out.println("Successfully sent message: " + res);
 		} catch (InterruptedException e) {

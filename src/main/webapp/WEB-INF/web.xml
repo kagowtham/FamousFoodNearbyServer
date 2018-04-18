@@ -25,6 +25,18 @@
   	<description></description>
   	<servlet-class>com.codebuildrs.famousfoodnearby.DeleteToken</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Insert</servlet-name>
+  	<display-name>Insert</display-name>
+  	<description></description>
+  	<servlet-class>com.codebuildrs.famousfoodnearby.Insert</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Get</servlet-name>
+  	<display-name>Get</display-name>
+  	<description></description>
+  	<servlet-class>com.codebuildrs.famousfoodnearby.Get</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Send</servlet-name>
   	<url-pattern>/Send</url-pattern>
@@ -36,5 +48,13 @@
   <servlet-mapping>
   	<servlet-name>DeleteToken</servlet-name>
   	<url-pattern>/DeleteToken</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Insert</servlet-name>
+  	<url-pattern>/Insert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Get</servlet-name>
+  	<url-pattern>/Get</url-pattern>
   </servlet-mapping>
 </web-app>
