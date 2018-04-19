@@ -4,6 +4,9 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <listener>
+  	<listener-class>com.codebuildrs.famousfoodnearby.ContextListener</listener-class>
+  </listener>
   
   <servlet>
   	<servlet-name>Send</servlet-name>
@@ -35,12 +38,7 @@
   	<description></description>
   	<servlet-class>com.codebuildrs.famousfoodnearby.Get</servlet-class>
   </servlet>
-  <servlet>
-  	<servlet-name>Start</servlet-name>
-  	<display-name>Start</display-name>
-  	<description></description>
-  	<servlet-class>com.codebuildrs.famousfoodnearby.Start</servlet-class>
-  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>Send</servlet-name>
   	<url-pattern>/Send</url-pattern>
@@ -61,8 +59,5 @@
   	<servlet-name>Get</servlet-name>
   	<url-pattern>/Get</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Start</servlet-name>
-  	<url-pattern>/Start</url-pattern>
-  </servlet-mapping>
+  
 </web-app>
