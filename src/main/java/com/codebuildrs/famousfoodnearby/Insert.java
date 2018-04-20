@@ -20,7 +20,7 @@ public class Insert extends HttpServlet {
 		String log=request.getParameter("log");
 		String famous=request.getParameter("famous");
 		MongoCollection<Document> collection=Database.database.getCollection("famous");
-		collection.insertOne(new Document("lat",Float.valueOf(lat)).append("log",Float.valueOf(log)).append("famous", famous));
+		collection.insertOne(new Document("lat",Double.valueOf(lat)).append("log",Double.valueOf(log)).append("famous", famous));
 		response.getWriter().append("success");
 		
 	}
