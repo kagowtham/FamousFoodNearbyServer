@@ -36,7 +36,7 @@ public class Get extends HttpServlet {
 		Float log=Float.valueOf(request.getParameter("log"));
 		MongoCollection<Document> collection=Database.database.getCollection("famous");
 		FindIterable<Document> iterable = collection.find(
-		        new Document("lat", new Document("$gte",lat-0.3).append("$lte", lat+0.3)).append("log", new Document("$gte",log-0.3).append("$lte", log+0.3)));
+		        new Document("lat", new Document("$gte",lat-0.7).append("$lte", lat+0.7)).append("log", new Document("$gte",log-0.7).append("$lte", log+0.7)));
 		Iterator<Document> iterator=iterable.iterator();
 		final JSONArray json=new JSONArray();
 		while(iterator.hasNext()) {
